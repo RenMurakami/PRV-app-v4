@@ -5,13 +5,69 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".select_profile">
 
+    <!--Textbox -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:scaleX="3"
+        android:scaleY="3"
         android:text="Select Profile"
         android:textSize="16sp"
-        android:translationY="-200sp"
-        android:translationX="0sp"/>
+        android:translationX="0sp"
+        android:translationY="-200sp" />
+
+    <!--Profile 4 -->
+    <Button
+        android:id="@+id/button_start4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Profile 4"
+        android:translationX="100sp"
+        android:translationY="150sp" />
+
+    <!--Profile 3 -->
+    <Button
+        android:id="@+id/button_start3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Profile 3"
+        android:translationX="-100sp"
+        android:translationY="150sp" />
+
+    <!--Profile 2 -->
+    <Button
+        android:id="@+id/button_start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Profile 2"
+        android:translationX="100sp" />
+
+    <!--Profile 1 -->
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Profile 1"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:translationX="-100sp" />
+
 </RelativeLayout>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PRVappv4"
         tools:targetApi="31">
         <activity
+            android:name=".Profile_1_Step_1"
+            android:exported="false" />
+        <activity
+            android:name=".Test_Profile"
+            android:exported="false" />
+        <activity
             android:name=".select_profile"
             android:exported="false" />
         <activity
