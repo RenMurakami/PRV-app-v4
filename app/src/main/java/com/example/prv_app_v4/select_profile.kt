@@ -10,11 +10,19 @@ class select_profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_profile)
 
+        // This is for start
         val buttonStart = findViewById<Button>(R.id.button_start)
         buttonStart.setOnClickListener{
             val Intent = Intent(this,Profile_1_Step_1::class.java)
             startActivity(Intent)
         }
+
+        // THis is for abort
+        val buttonAbort = findViewById<Button>(R.id.button_abort)
+        buttonAbort.setOnClickListener{
+            System.exit(-1)
+        }
+
     }
 
 
