@@ -13,6 +13,7 @@ class Profile_1_Step_1 : AppCompatActivity() {
         buttonStart.setOnClickListener{
             val Intent = Intent(this,Test_Profile::class.java)
             startActivity(Intent)
+            // test
         }
     }
 }
