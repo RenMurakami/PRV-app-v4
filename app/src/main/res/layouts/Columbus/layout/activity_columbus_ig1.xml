@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".select_profile">
+    tools:context="Columbus.ColumbusIG1">
 
     <!--Textbox for driving -->
     <TextView
@@ -13,7 +14,7 @@
         android:layout_centerInParent="true"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="Step 1: \nDrive until warning"
+        android:text="Step 1: \nIG off until warning"
         android:textAlignment="center"
         android:textColor="@color/design_default_color_error"
         android:textSize="16sp"
@@ -41,7 +42,8 @@
         android:layout_centerInParent="true"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="@string/place_holder_time" />
+        android:text="@string/place_holder_time"
+        android:visibility="visible"/>
 
     <!--Start Button-->
     <Button
@@ -52,9 +54,21 @@
         android:layout_centerHorizontal="true"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="start"
-        android:translationY="100sp" />
+        android:text="Start"
+        android:translationY="100sp"
+        android:visibility="visible"/>
 
-
+    <!--Next Button-->
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Next"
+        android:translationY="100sp"
+        android:visibility="invisible"/>
 
 </RelativeLayout>

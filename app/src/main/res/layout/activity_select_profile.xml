@@ -18,31 +18,37 @@ tools:context=".select_profile">
         android:translationX="0sp"
         android:translationY="-200sp" />
 
-    <!--Time Base-->
-    <Button
-        android:id="@+id/button_start4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true"
-        android:scaleX="1"
-        android:scaleY="1"
-        android:text="4 hour drive"
-        android:translationX="100sp"
-        android:translationY="150sp" />
+    <!--Profiler select buttons-->
 
-    <!--Time Base -->
+    <!--Location Based -->
     <Button
-        android:id="@+id/button_start3"
+        android:id="@+id/button_start0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:scaleX="1"
         android:scaleY="1"
-        android:text="2 hour drive"
+        android:text="Columbus"
+        android:textAlignment="center"
+        android:textSize="14sp"
         android:translationX="-100sp"
-        android:translationY="150sp" />
+        android:translationY="-120sp"/>
+
+    <!--Location Based -->
+    <Button
+        android:id="@+id/button_start1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Cincinnati"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:translationX="100sp"
+        android:translationY="-120sp"/>
 
     <!--Location Based -->
     <Button
@@ -54,21 +60,53 @@ tools:context=".select_profile">
         android:scaleX="1"
         android:scaleY="1"
         android:text="Cleveland"
-        android:translationX="100sp" />
+        android:translationX="-100sp"
+        android:translationY="0sp"/>
 
     <!--Location Based -->
     <Button
-        android:id="@+id/button_start"
+        android:id="@+id/button_start3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Chicago"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:translationX="100sp"
+        android:translationY="0sp"/>
+
+    <!--Time Base-->
+    <Button
+        android:id="@+id/button_start4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:scaleX="1"
         android:scaleY="1"
-        android:text="Columbus"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:translationX="-100sp" />
+        android:text="4 hour drive"
+        android:translationX="100sp"
+        android:translationY="120sp" />
+
+    <!--Time Base -->
+    <Button
+        android:id="@+id/button_start5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="2 hour drive"
+        android:translationX="-100sp"
+        android:translationY="120sp" />
+
+
+
+
 
     <!--Abort -->
     <Button

@@ -11,10 +11,12 @@ class select_profile : AppCompatActivity() {
         setContentView(R.layout.activity_select_profile)
 
         // This is for start
-        val buttonStart = findViewById<Button>(R.id.button_start)
+
+        //Columbus profiler
+        val buttonStart = findViewById<Button>(R.id.button_start0)
         buttonStart.setOnClickListener{
-            val Intent = Intent(this,Profile_1_Step_1::class.java)
-            startActivity(Intent)
+            val intent = Intent(this,Columbus.ColumbusScene1::class.java)
+            startActivity(intent)
         }
 
         // THis is for abort

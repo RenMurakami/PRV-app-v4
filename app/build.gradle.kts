@@ -36,6 +36,22 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    sourceSets {
+        getByName("main") {
+            res {
+                srcDirs("src\\main\\res", "src\\main\\res\\2",
+                    "src\\main\\res",
+                    "src\\main\\res\\Columbus", "src\\main\\res", "src\\main\\res\\layouts\\Columbus",
+                    "src\\main\\res",
+                    "src\\main\\res\\layouts\\Chicago", "src\\main\\res", "src\\main\\res\\layouts\\Cleveland",
+                    "src\\main\\res",
+                    "src\\main\\res\\layouts\\Cincinnati", "src\\main\\res", "src\\main\\res\\layouts\\time1",
+                    "src\\main\\res",
+                    "src\\main\\res\\layouts\\time2"
+                )
+            }
+        }
+    }
 }
 
 dependencies {

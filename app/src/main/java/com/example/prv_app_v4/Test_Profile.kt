@@ -39,8 +39,8 @@ class Test_Profile : AppCompatActivity() {
         }
 
         buttonStart.setOnClickListener{
-            val Intent = Intent(this,MainActivity::class.java)
-            startActivity(Intent)
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
         }
 
     }
