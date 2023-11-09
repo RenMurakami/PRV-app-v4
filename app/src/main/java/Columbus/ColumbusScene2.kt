@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.view.View
 import android.content.Intent
 import com.example.prv_app_v4.MainActivity
+import android.util.Log
 
 class ColumbusScene2 : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
@@ -53,10 +54,15 @@ class ColumbusScene2 : AppCompatActivity() {
 
 
         buttonNext.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,ColumbusIG1::class.java)
             startActivity(intent)
         }
 
+        // THis is for abort
+        val buttonAbort = findViewById<Button>(R.id.button_abort)
+        buttonAbort.setOnClickListener{
+            System.exit(-1)
+        }
 
     }
 }

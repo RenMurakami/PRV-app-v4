@@ -57,6 +57,12 @@ class ColumbusScene1 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // THis is for abort
+        val buttonAbort = findViewById<Button>(R.id.button_abort)
+        buttonAbort.setOnClickListener{
+            System.exit(-1)
+        }
+
     }
 }
 

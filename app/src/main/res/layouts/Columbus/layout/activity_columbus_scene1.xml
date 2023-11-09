@@ -71,4 +71,19 @@
     android:translationY="100sp"
     android:visibility="invisible"/>
 
+    <!--Abort -->
+    <Button
+    android:id="@+id/button_abort"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView"
+    android:layout_centerHorizontal="true"
+    android:scaleX="1"
+    android:scaleY="1"
+    android:textAlignment="center"
+    android:textSize="14sp"
+    android:translationX="150sp"
+    android:translationY="300sp"
+    android:text="Abort" />
+
 </RelativeLayout>
