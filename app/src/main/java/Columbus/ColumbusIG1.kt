@@ -1,6 +1,7 @@
 package Columbus
 
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.BatteryManager
 
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.prv_app_v4.R
+import com.example.prv_app_v4.end
 
 
 class ColumbusIG1 : AppCompatActivity() {
@@ -26,9 +28,18 @@ class ColumbusIG1 : AppCompatActivity() {
 
             val batteryManager = getSystemService(BATTERY_SERVICE) as BatteryManager
 
-            // Get the battery level
-            val batteryStatus = batteryManager.isCharging
-            Log.i(batteryStatus.toString(),batteryStatus.toString())
+            // Get the Charging status
+            //val batteryStatus = batteryManager.isCharging
+            //Log.i(batteryStatus.toString(),batteryStatus.toString())
+
+            val batteryStatus: Intent? = IntentFilter(Intent.ACTION_BATTERY_CHANGED).let { ifilter ->
+                registerReceiver(null, ifilter)
+            }
+            val status: Int = batteryStatus?.getIntExtra(BatteryManager.EXTRA_STATUS, -1) ?: -1
+
+            val isCharging: Boolean = status == BatteryManager.BATTERY_STATUS_CHARGING
+            Log.i(isCharging.toString(),isCharging.toString())
+
 
             val countDownTimer = findViewById<TextView>(R.id.countdown)
             val timeCount = countDownTimer.text.toString()
@@ -37,29 +48,32 @@ class ColumbusIG1 : AppCompatActivity() {
             val hour = timeCount.subSequence(0,2)
             val time_in_milisecond = (second.toString().toInt()+60*minute.toString().toInt()
                     +3600*hour.toString().toInt())*1000
-            countDownTimer.setVisibility(View.INVISIBLE)
-            buttonStart.setVisibility(View.INVISIBLE)
-            timer = object: CountDownTimer(time_in_milisecond.toLong(), 1000) {
-                override fun onTick(millisUntilFinished: Long) {
-                    //Print remaining time
-                    countDownTimer.text = "seconds remaining: " + millisUntilFinished / 1000
+            if (isCharging){
+                countDownTimer.setVisibility(View.INVISIBLE)
+                buttonStart.setVisibility(View.INVISIBLE)
+                timer = object: CountDownTimer(time_in_milisecond.toLong(), 1000) {
+                    override fun onTick(millisUntilFinished: Long) {
+                        //Print remaining time
+                        countDownTimer.text = "seconds remaining: " + millisUntilFinished / 1000
 
-                    if (millisUntilFinished < 10000) {
-                        countDownTimer.setVisibility(View.VISIBLE)
-                        buttonNext.setVisibility(View.VISIBLE)
+                        if (millisUntilFinished < 10000) {
+                            countDownTimer.setVisibility(View.VISIBLE)
+                            buttonNext.setVisibility(View.VISIBLE)
+                        }
+                    }
+                    override fun onFinish() {
+                        //Print timer completion statement
+                        countDownTimer.text = "Complete"
+                        //buttonStart.setVisibility(View.VISIBLE)
                     }
                 }
-                override fun onFinish() {
-                    //Print timer completion statement
-                    countDownTimer.text = "Complete"
-                    //buttonStart.setVisibility(View.VISIBLE)
-                }
+                timer.start()
             }
-            timer.start()
+
         }
 
         buttonNext.setOnClickListener{
-            val intent = Intent(this, ColumbusScene2::class.java)
+            val intent = Intent(this, end::class.java)
             startActivity(intent)
         }
 
