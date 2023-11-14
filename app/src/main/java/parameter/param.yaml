@@ -1,0 +1,36 @@
+name: RWV Profiler
+number-of-profiler: 2
+profiler-1:
+  index: 0
+  name: Templet
+  number-of-scene: 2
+  scene-0:
+    index: 0
+    type: time
+    time: 00:00:13
+    text: "Drive for 13 second"
+  scene-1:
+    index: 1
+    type: location
+    address: I do not know ask Dalton
+    text: Drive to the destination.
+  scene-2:
+    index: 2
+    type: ig
+    time: 00:00:17
+    text: IG off for 17 second
+profiler-2:
+  index: 0
+  name: Templet1
+  number-of-scene: 1
+  scene-0:
+    index: 0
+    type: location
+    address: I am at the desk
+    text: Drive to Ramen place
+  scene-1:
+    index: 1
+    type: ig
+    time: 00:00:11
+    text: IG off for 11 sec
+
