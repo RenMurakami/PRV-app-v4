@@ -33,7 +33,8 @@ tools:context=".select_profile">
         android:textAlignment="center"
         android:textSize="14sp"
         android:translationX="-100sp"
-        android:translationY="-120sp"/>
+        android:translationY="-120sp"
+        android:visibility="invisible"/>
 
     <!--Location Based -->
     <Button
@@ -48,7 +49,8 @@ tools:context=".select_profile">
         android:textAlignment="center"
         android:textSize="14sp"
         android:translationX="100sp"
-        android:translationY="-120sp"/>
+        android:translationY="-120sp"
+        android:visibility="invisible"/>
 
     <!--Location Based -->
     <Button
@@ -61,7 +63,8 @@ tools:context=".select_profile">
         android:scaleY="1"
         android:text="Cleveland"
         android:translationX="-100sp"
-        android:translationY="0sp"/>
+        android:translationY="0sp"
+        android:visibility="invisible"/>
 
     <!--Location Based -->
     <Button
@@ -76,7 +79,8 @@ tools:context=".select_profile">
         android:layout_centerHorizontal="true"
         android:textSize="14sp"
         android:translationX="100sp"
-        android:translationY="0sp"/>
+        android:translationY="0sp"
+        android:visibility="invisible"/>
 
     <!--Time Base-->
     <Button
@@ -89,7 +93,8 @@ tools:context=".select_profile">
         android:scaleY="1"
         android:text="4 hour drive"
         android:translationX="100sp"
-        android:translationY="120sp" />
+        android:translationY="120sp"
+        android:visibility="invisible"/>
 
     <!--Time Base -->
     <Button
@@ -102,7 +107,8 @@ tools:context=".select_profile">
         android:scaleY="1"
         android:text="2 hour drive"
         android:translationX="-100sp"
-        android:translationY="120sp" />
+        android:translationY="120sp"
+        android:visibility="invisible"/>
 
 
 

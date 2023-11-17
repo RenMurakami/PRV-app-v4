@@ -48,7 +48,7 @@ class ColumbusIG1 : AppCompatActivity() {
             val hour = timeCount.subSequence(0,2)
             val time_in_milisecond = (second.toString().toInt()+60*minute.toString().toInt()
                     +3600*hour.toString().toInt())*1000
-            if (isCharging){
+            if (!isCharging){
                 countDownTimer.setVisibility(View.INVISIBLE)
                 buttonStart.setVisibility(View.INVISIBLE)
                 timer = object: CountDownTimer(time_in_milisecond.toLong(), 1000) {

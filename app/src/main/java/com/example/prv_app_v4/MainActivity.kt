@@ -11,7 +11,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.prv_app_v4.databinding.ActivityMainBinding
-import profilerClass.ProfilerList
+import profilerClass.*
 import java.io.Serializable
 
 class MainActivity : AppCompatActivity() {
@@ -21,15 +21,63 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val obj = ProfilerList()
-        obj.Title="UNI"
+        /*
+        * This section will be the section to
+        * initialize the profiler sets.
+        * ProfilerList() will contain multiple profiler sets.
+        * This will display in the select profiler activity.
+        * Example will be Columbus route, 4 Hours Drive or something like that.
+        * Profiler
+        *
+        *
+        *
+        *
+         */
+        // Create the profiler set
+        val profiler = ProfilerList()
+        // The title for the start screen.
+        profiler.title="PRV Application"
+
+        // Create the first Profiler
+        var columbusRout = Profiler()
+        columbusRout.name="Columbus~Route"
+        columbusRout.numProf=2
+
+        // 1 st task
+        var c0=LocationProf()
+        c0.index=0
+        c0.text="Go to cat colony and fluff cats"
+        c0.address="2740 Festival Ln, Dublin, OH 43017"
+
+        // 2 st task
+        var c1=IgProf()
+        c1.index=1
+        c1.text="IG off for 20 seconds"
+        c1.time="00:00:20"
+
+        // 3 st task
+        var c2=TimeProf()
+        c2.index=2
+        c2.text="Drive for 15 seconds"
+        c2.time="00:00:15"
+
+        // Adding those task in Columbus route
+        columbusRout.taskList.add(c0)
+        columbusRout.taskList.add(c1)
+        columbusRout.taskList.add(c2)
+
+        //
+        profiler.profilerList.add(columbusRout)
+
+
+
         val text =findViewById<TextView>(R.id.textView)
-        text.text=obj.Title
+        text.text=profiler.title
 
         val buttonStart = findViewById<Button>(R.id.button_start)
         buttonStart.setOnClickListener{
             val intent = Intent(this,select_profile::class.java)
-            intent.putExtra("object", obj)
+            intent.putExtra("object", profiler)
             startActivity(intent)
         }
 
