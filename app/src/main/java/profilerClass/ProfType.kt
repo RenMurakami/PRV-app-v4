@@ -1,4 +1,6 @@
 package profilerClass
 
-open class ProfType {
+import java.io.Serializable
+
+open class ProfType:Serializable {
 }

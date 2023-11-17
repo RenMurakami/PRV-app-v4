@@ -2,15 +2,15 @@ package profilerClass
 
 import java.io.Serializable
 
-class Profiler  {
+class Profiler:Serializable  {
 
     //This will be on the tile scene
-    var name = ""
+    public var name = String()
     // Number of profiler on the select scene
     // Minimum is 1, and Maxium is 6
-    var numProf=1
+    public var numProf=1
 
-    public var profilerList = mutableListOf<ProfType>()
+    public var taskList = mutableListOf<ProfType>()
 
 
 
