@@ -125,8 +125,8 @@ tools:context=".select_profile">
         android:scaleY="1"
         android:textAlignment="center"
         android:textSize="14sp"
-        android:translationX="150sp"
-        android:translationY="300sp"
+        android:translationX="100sp"
+        android:translationY="200sp"
         android:text="Abort" />
 
 </RelativeLayout>

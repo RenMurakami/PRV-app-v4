@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Columbus.ColumbusIG1">
+    tools:context=".profilerTemplet">
 
     <!--Textbox for driving -->
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/mainView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="Step 3: \nIG off until warning"
+        android:text="Step 1: \nDrive until warning"
         android:textAlignment="center"
         android:textColor="@color/design_default_color_error"
         android:textSize="16sp"
@@ -22,7 +22,7 @@
 
     <!-- Header-->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -31,8 +31,9 @@
         android:text="Test Profile"
         android:textColor="@color/design_default_color_error"
         android:textSize="16sp"
-        android:translationX="-120sp"
-        android:translationY="-280sp" />
+        android:translationX="-80sp"
+        android:translationY="-280sp"
+        android:visibility="invisible"/>
 
     <!--Countdown placeholder-->
     <TextView
@@ -43,19 +44,18 @@
         android:scaleX="2"
         android:scaleY="2"
         android:text="@string/place_holder_time"
-        android:visibility="visible"/>
+        android:visibility="invisible" />
 
     <!--Start Button-->
     <Button
         android:id="@+id/button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:scaleX="2"
         android:scaleY="2"
         android:text="Start"
-        android:translationY="100sp"
+        android:translationY="430sp"
         android:visibility="visible"/>
 
     <!--Next Button-->
@@ -63,27 +63,24 @@
         android:id="@+id/button_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:scaleX="2"
         android:scaleY="2"
         android:text="Next"
-        android:translationY="100sp"
+        android:translationY="430sp"
         android:visibility="invisible"/>
 
     <!--Abort -->
     <Button
-    android:id="@+id/button_abort"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/textView"
-    android:layout_centerHorizontal="true"
-    android:scaleX="1"
-    android:scaleY="1"
-    android:textAlignment="center"
-    android:textSize="14sp"
-    android:translationX="150sp"
-    android:translationY="300sp"
-    android:text="Abort" />
-
+        android:id="@+id/button_abort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:translationX="120sp"
+        android:translationY="530sp"
+        android:text="Abort" />
 </RelativeLayout>

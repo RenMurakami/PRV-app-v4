@@ -38,11 +38,52 @@ class select_profile : AppCompatActivity() {
 
 
         //Columbus profiler
-        val buttonStart = findViewById<Button>(R.id.button_start0)
-        buttonStart.setOnClickListener{
-            val intent = Intent(this,Columbus.ColumbusScene1::class.java)
+        val buttonStart0 = findViewById<Button>(R.id.button_start0)
+        buttonStart0.setOnClickListener{
+            val intent = Intent(this,profilerTemplet::class.java)
+            intent.putExtra("prof0", profiler.profilerList[0])
             startActivity(intent)
         }
+
+        val buttonStart1 = findViewById<Button>(R.id.button_start1)
+        buttonStart1.setOnClickListener{
+            val intent = Intent(this,profilerTemplet::class.java)
+            intent.putExtra("prof1", profiler.profilerList[1])
+            startActivity(intent)
+        }
+
+        val buttonStart2 = findViewById<Button>(R.id.button_start2)
+        buttonStart2.setOnClickListener{
+            val intent = Intent(this,profilerTemplet::class.java)
+            intent.putExtra("prof2", profiler.profilerList[2])
+            startActivity(intent)
+        }
+
+        val buttonStart3 = findViewById<Button>(R.id.button_start3)
+        buttonStart3.setOnClickListener{
+            val intent = Intent(this,profilerTemplet::class.java)
+            intent.putExtra("prof3", profiler.profilerList[3])
+            startActivity(intent)
+        }
+
+        val buttonStart4 = findViewById<Button>(R.id.button_start4)
+        buttonStart4.setOnClickListener{
+            val intent = Intent(this,profilerTemplet::class.java)
+            intent.putExtra("prof4", profiler.profilerList[4])
+            startActivity(intent)
+        }
+
+        val buttonStart5 = findViewById<Button>(R.id.button_start5)
+        buttonStart5.setOnClickListener{
+            val intent = Intent(this,profilerTemplet::class.java)
+            intent.putExtra("prof5", profiler.profilerList[5])
+            startActivity(intent)
+        }
+
+
+
+
+
 
         // THis is for abort
         val buttonAbort = findViewById<Button>(R.id.button_abort)

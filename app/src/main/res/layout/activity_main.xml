@@ -8,6 +8,7 @@
     android:paddingTop="?attr/actionBarSize">
 
 
+
     <!--Textbox 1 = "Welcome to the"-->
     <TextView
         android:id="@+id/textView"
@@ -19,17 +20,29 @@
         android:text="Welcome to the\nPRV Program"
         android:textAlignment="center"
         android:translationX="0sp"
-        android:translationY="-100sp" />
+        android:translationY="0sp" />
 
     <!--Start Button-->
+
     <Button
         android:id="@+id/button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
+
         android:layout_centerHorizontal="true"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="start" />
+        android:text="start"
+        android:textAlignment="center"
+        android:translationX="0sp"
+        android:translationY="430sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="182dp"
+        android:layout_height="562dp"
+        android:translationX="40sp"
+        android:translationY="-200sp"
+        app:srcCompat="@drawable/icon" />
 
 </RelativeLayout>

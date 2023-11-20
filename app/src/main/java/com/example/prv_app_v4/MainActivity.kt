@@ -41,33 +41,48 @@ class MainActivity : AppCompatActivity() {
         // Create the first Profiler
         var columbusRout = Profiler()
         columbusRout.name="Columbus~Route"
-        columbusRout.numProf=2
+        columbusRout.numProf=3
 
         // 1 st task
         var c0=LocationProf()
         c0.index=0
-        c0.text="Go to cat colony and fluff cats"
+        c0.text="Go to cat colony\n and fluff cats"
         c0.address="2740 Festival Ln, Dublin, OH 43017"
 
         // 2 st task
-        var c1=IgProf()
+        var c1=TimeProf()
         c1.index=1
-        c1.text="IG off for 20 seconds"
-        c1.time="00:00:20"
+        c1.text="Time off for 5 seconds"
+        c1.time="00:00:5"
 
         // 3 st task
         var c2=TimeProf()
         c2.index=2
-        c2.text="Drive for 15 seconds"
-        c2.time="00:00:15"
+        c2.text="Drive for 13 seconds"
+        c2.time="00:00:13"
+
+        var c3=TimeProf()
+        c3.index=3
+        c3.text="Drive for 11 seconds"
+        c3.time="00:00:11"
 
         // Adding those task in Columbus route
+        // Every task you create need to be added here
         columbusRout.taskList.add(c0)
         columbusRout.taskList.add(c1)
         columbusRout.taskList.add(c2)
+        columbusRout.taskList.add(c3)
+        // '''
 
         //
         profiler.profilerList.add(columbusRout)
+
+        // Create the first Profiler
+        var emptyRoute = Profiler()
+        emptyRoute.name="EMPTY~Route"
+        emptyRoute.numProf=0
+
+        profiler.profilerList.add(emptyRoute)
 
 
 
