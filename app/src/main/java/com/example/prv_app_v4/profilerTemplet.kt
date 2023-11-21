@@ -1,6 +1,7 @@
 package com.example.prv_app_v4
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -19,6 +20,7 @@ class profilerTemplet : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profiler_templet)
 
+        var mediaPlayer = MediaPlayer.create(this, R.raw.cat1 )
         val myIntent = intent
         // FIXIT
         // ID need to be in logic
@@ -48,6 +50,14 @@ class profilerTemplet : AppCompatActivity() {
 
         fun timer(){
 
+        }
+
+        fun audioOn(){
+            mediaPlayer.start()
+        }
+
+        fun audioOff(){
+            mediaPlayer.stop()
         }
 
         // Set the Button
@@ -123,6 +133,7 @@ class profilerTemplet : AppCompatActivity() {
                         if (millisUntilFinished < 10000) {
                             countDownTimer.setVisibility(View.VISIBLE)
                             nextButton.setVisibility(View.VISIBLE)
+                            audioOn()
                         }
                     }
                     override fun onFinish() {
@@ -137,6 +148,7 @@ class profilerTemplet : AppCompatActivity() {
 
             nextButton.setOnClickListener {
                 // Next Activity
+                audioOff()
                 profilers.currentNum = profilers.currentNum+1
                 if (!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
@@ -179,6 +191,7 @@ class profilerTemplet : AppCompatActivity() {
                         if (millisUntilFinished < 10000) {
                             countDownTimer.setVisibility(View.VISIBLE)
                             nextButton.setVisibility(View.VISIBLE)
+                            audioOn()
                         }
                     }
                     override fun onFinish() {
@@ -193,6 +206,7 @@ class profilerTemplet : AppCompatActivity() {
 
             nextButton.setOnClickListener {
                 // Next Activity
+                audioOff()
                 profilers.currentNum = profilers.currentNum+1
                 if(!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
@@ -210,6 +224,7 @@ class profilerTemplet : AppCompatActivity() {
 
         var abort = findViewById<Button>(R.id.button_abort)
         abort.setOnClickListener{
+            audioOff()
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
