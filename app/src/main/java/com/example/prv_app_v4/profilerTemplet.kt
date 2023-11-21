@@ -2,19 +2,29 @@ package com.example.prv_app_v4
 
 import android.content.Intent
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
+import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import org.w3c.dom.Text
-import profilerClass.*
+import androidx.appcompat.app.AppCompatActivity
+import profilerClass.IgProf
+import profilerClass.LocationProf
+import profilerClass.Profiler
+import profilerClass.TimeProf
+
 
 class profilerTemplet : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
 
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        return if (keyCode == KeyEvent.KEYCODE_BACK) {
+            //preventing default implementation previous to android.os.Build.VERSION_CODES.ECLAIR
+            true
+        } else super.onKeyDown(keyCode, event)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
