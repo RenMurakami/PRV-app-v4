@@ -14,7 +14,7 @@
         android:layout_centerInParent="true"
         android:scaleX="2"
         android:scaleY="2"
-        android:text="Step 1: \nDrive until warning"
+        android:text="Default"
         android:textAlignment="center"
         android:textColor="@color/design_default_color_error"
         android:textSize="16sp"

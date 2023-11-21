@@ -38,11 +38,12 @@
         android:translationY="430sp" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="182dp"
-        android:layout_height="562dp"
-        android:translationX="40sp"
-        android:translationY="-200sp"
-        app:srcCompat="@drawable/icon" />
+        android:id="@+id/imageView"
+        android:layout_width="332dp"
+        android:layout_height="283dp"
+        android:textAlignment="center"
+        android:translationX="50sp"
+        android:translationY="0sp"
+        app:srcCompat="@drawable/dfsa_removebg_preview" />
 
 </RelativeLayout>

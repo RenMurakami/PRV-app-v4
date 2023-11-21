@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         var c0=LocationProf()
         c0.index=0
         c0.text="Go to cat colony\n and fluff cats"
-        c0.address="2740 Festival Ln, Dublin, OH 43017"
+        c0.address="2740 Festival Ln,\n Dublin, OH 43017"
 
         // 2 st task
         var c1=TimeProf()

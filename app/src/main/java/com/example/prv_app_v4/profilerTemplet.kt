@@ -72,6 +72,7 @@ class profilerTemplet : AppCompatActivity() {
 
             var mainText = findViewById<TextView>(R.id.countdown)
             mainText.setText(profiler.address)
+            mainText.setVisibility(View.VISIBLE)
 
             // Set the Button
             var startButton = findViewById<Button>(R.id.button_start)
