@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <TextView
+        android:id="@+id/settingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Setting"
+        android:textAlignment="center"
+        android:translationX="0sp"
+        android:translationY="-200sp" />
+
+    <Button
+        android:id="@+id/takeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Load"
+        android:textAlignment="center"
+        android:translationX="100sp"
+        android:translationY="0sp" />
+
+    <Button
+        android:id="@+id/notificationSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Set"
+        android:textAlignment="center"
+        android:translationX="100sp"
+        android:translationY="100sp"/>
+
+    <TextView
+        android:id="@+id/NSoundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Notification Sound"
+        android:textAlignment="center"
+        android:translationX="-100sp"
+        android:translationY="100sp"/>
+
+    <TextView
+        android:id="@+id/inputFileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Notification Sound"
+        android:textAlignment="center"
+        android:translationX="-100sp"
+        android:translationY="00sp" />
+
+    <TextView
+        android:id="@+id/filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Default"
+        android:textAlignment="center"
+        android:translationX="-100sp"
+        android:translationY="50sp" />
+
+    <TextView
+        android:id="@+id/testOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Default"
+        android:textAlignment="center"
+        android:translationX="-100sp"
+        android:translationY="140sp" />
+
+
+</RelativeLayout>

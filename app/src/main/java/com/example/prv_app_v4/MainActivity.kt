@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
             true
         } else super.onKeyDown(keyCode, event)
     }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -46,6 +49,7 @@ class MainActivity : AppCompatActivity() {
         val profiler = ProfilerList()
         // The title for the start screen.
         profiler.title="PRV Application"
+        profiler.inputFile=false
 
         // Create the first Profiler
         var columbusRout = Profiler()
@@ -101,6 +105,13 @@ class MainActivity : AppCompatActivity() {
         val buttonStart = findViewById<Button>(R.id.button_start)
         buttonStart.setOnClickListener{
             val intent = Intent(this,select_profile::class.java)
+            intent.putExtra("object", profiler)
+            startActivity(intent)
+        }
+
+        val buttonSetting = findViewById<Button>(R.id.buttonSetting)
+        buttonSetting.setOnClickListener {
+            val intent = Intent(this,Setting::class.java)
             intent.putExtra("object", profiler)
             startActivity(intent)
         }

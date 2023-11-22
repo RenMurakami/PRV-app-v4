@@ -39,11 +39,22 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="332dp"
-        android:layout_height="283dp"
+        android:layout_width="263dp"
+        android:layout_height="235dp"
+        android:layout_centerInParent="true"
         android:textAlignment="center"
-        android:translationX="50sp"
-        android:translationY="0sp"
+        android:translationX="0sp"
+        android:translationY="-150sp"
         app:srcCompat="@drawable/dfsa_removebg_preview" />
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Setting"
+        android:textAlignment="center"
+        android:translationX="0sp"
+        android:translationY="250sp" />
 
 </RelativeLayout>
