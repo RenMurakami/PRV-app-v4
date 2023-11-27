@@ -50,11 +50,11 @@ class MainActivity : AppCompatActivity() {
         // The title for the start screen.
         profiler.title="PRV Application"
         profiler.inputFile=false
-
+//--------------------------------------------------------------------------------------------
         // Create the first Profiler
         var columbusRout = Profiler()
         columbusRout.name="Columbus~Route"
-        columbusRout.numProf=3
+        columbusRout.numProf=4
 
         // 1 st task
         var c0=LocationProf()
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         var c1=TimeProf()
         c1.index=1
         c1.text="Time off for 5 seconds"
-        c1.time="00:00:5"
+        c1.time="00:00:05"
 
         // 3 st task
         var c2=TimeProf()
@@ -79,18 +79,48 @@ class MainActivity : AppCompatActivity() {
         c3.text="Drive for 11 seconds"
         c3.time="00:00:11"
 
+        var c4 =IgProf()
+        c4.index=4
+        c4.text="IG off for 11 seconds"
+        c4.time="00:00:11"
+
         // Adding those task in Columbus route
         // Every task you create need to be added here
         columbusRout.taskList.add(c0)
         columbusRout.taskList.add(c1)
         columbusRout.taskList.add(c2)
         columbusRout.taskList.add(c3)
+        columbusRout.taskList.add(c4)
         // '''
 
         //
         profiler.profilerList.add(columbusRout)
+//--------------------------------------------------------------------------------------------
+        // Create Random IG Cycle Profiler
+        var igCycle = Profiler()
+        igCycle.name = "IG Cycle~Route"
+        igCycle.numProf=1
 
-        // Create the first Profiler
+        var i4 = IgProf()
+        i4.index = 0
+        i4.text = "IG Cycle for 10 seconds"
+        i4.time = "00:00:10"
+
+        //5 st task
+        var i5 = IgProf()
+        i5.index = 1
+        i5.text = "IG Cycle for 13 seconds"
+        i5.time = "00:00:13"
+
+        //Add tasks to IGCycle Route
+        igCycle.taskList.add(i4)
+        igCycle.taskList.add(i5)
+
+
+        //Add Route to List
+        profiler.profilerList.add(igCycle)
+//--------------------------------------------------------------------------------------------
+        // Create blank Profiler
         var emptyRoute = Profiler()
         emptyRoute.name="EMPTY~Route"
         emptyRoute.numProf=0

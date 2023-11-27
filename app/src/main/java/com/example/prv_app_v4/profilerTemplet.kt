@@ -36,7 +36,18 @@ class profilerTemplet : AppCompatActivity() {
         // ID need to be in logic
         // Does ID need to be different every transmistion?
         // ************************************************
-        val profilers= intent.getSerializableExtra("prof0") as Profiler
+        var keyB = intent.getSerializableExtra("key")
+        var selectProf=""
+        when (keyB){
+            0 -> selectProf = "prof0"
+            1 -> selectProf = "prof1"
+            2 -> selectProf = "prof2"
+            3 -> selectProf = "prof3"
+            4 -> selectProf = "prof4"
+            5 -> selectProf = "prof5"
+        }
+
+        val profilers= intent.getSerializableExtra(selectProf) as Profiler
         // ************************************************
         Log.i(profilers.currentNum.toString(),"CURRENT IS " +profilers.currentNum.toString())
 
@@ -106,7 +117,8 @@ class profilerTemplet : AppCompatActivity() {
                 if(!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
                     val intent = Intent(this,profilerTemplet::class.java)
-                    intent.putExtra("prof0", profilers)
+                    intent.putExtra(selectProf, profilers)
+                    intent.putExtra("key", keyB)
                     startActivity(intent)
                 }
 
@@ -163,7 +175,8 @@ class profilerTemplet : AppCompatActivity() {
                 if (!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
                     val intent = Intent(this,profilerTemplet::class.java)
-                    intent.putExtra("prof0", profilers)
+                    intent.putExtra(selectProf, profilers)
+                    intent.putExtra("key", keyB)
                     startActivity(intent)
                 }
 
@@ -221,7 +234,8 @@ class profilerTemplet : AppCompatActivity() {
                 if(!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
                     val intent = Intent(this,profilerTemplet::class.java)
-                    intent.putExtra("prof0", profilers)
+                    intent.putExtra(selectProf, profilers)
+                    intent.putExtra("key", keyB)
                     startActivity(intent)
                 }
             }

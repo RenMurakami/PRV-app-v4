@@ -51,6 +51,7 @@ class select_profile : AppCompatActivity() {
         buttonStart0.setOnClickListener{
             val intent = Intent(this,profilerTemplet::class.java)
             intent.putExtra("prof0", profiler.profilerList[0])
+            intent.putExtra("key", 0)
             startActivity(intent)
         }
 
@@ -58,6 +59,7 @@ class select_profile : AppCompatActivity() {
         buttonStart1.setOnClickListener{
             val intent = Intent(this,profilerTemplet::class.java)
             intent.putExtra("prof1", profiler.profilerList[1])
+            intent.putExtra("key", 1)
             startActivity(intent)
         }
 
@@ -65,6 +67,7 @@ class select_profile : AppCompatActivity() {
         buttonStart2.setOnClickListener{
             val intent = Intent(this,profilerTemplet::class.java)
             intent.putExtra("prof2", profiler.profilerList[2])
+            intent.putExtra("key", 2)
             startActivity(intent)
         }
 
@@ -72,6 +75,7 @@ class select_profile : AppCompatActivity() {
         buttonStart3.setOnClickListener{
             val intent = Intent(this,profilerTemplet::class.java)
             intent.putExtra("prof3", profiler.profilerList[3])
+            intent.putExtra("key", 3)
             startActivity(intent)
         }
 
@@ -79,6 +83,7 @@ class select_profile : AppCompatActivity() {
         buttonStart4.setOnClickListener{
             val intent = Intent(this,profilerTemplet::class.java)
             intent.putExtra("prof4", profiler.profilerList[4])
+            intent.putExtra("key", 4)
             startActivity(intent)
         }
 
@@ -86,6 +91,7 @@ class select_profile : AppCompatActivity() {
         buttonStart5.setOnClickListener{
             val intent = Intent(this,profilerTemplet::class.java)
             intent.putExtra("prof5", profiler.profilerList[5])
+            intent.putExtra("key", 5)
             startActivity(intent)
         }
 
