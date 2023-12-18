@@ -47,7 +47,7 @@ android {
                     "src\\main\\res",
                     "src\\main\\res\\layouts\\Cincinnati", "src\\main\\res", "src\\main\\res\\layouts\\time1",
                     "src\\main\\res",
-                    "src\\main\\res\\layouts\\time2"
+                    "src\\main\\res\\layouts\\time2", "src\\main\\res", "src\\main\\res\\layouts\\efc-layouts"
                 )
             }
         }

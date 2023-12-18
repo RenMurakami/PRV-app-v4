@@ -110,6 +110,19 @@ tools:context=".select_profile">
         android:translationY="120sp"
         android:visibility="invisible"/>
 
+    <Button
+        android:id="@+id/button_start6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="EFC-Test"
+        android:translationX="-100sp"
+        android:translationY="200sp"
+        android:visibility="visible"/>
+
 
 
 

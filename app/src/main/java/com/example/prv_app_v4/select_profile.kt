@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import efcClass.fob_entry
 import profilerClass.ProfilerList
 import java.sql.Types.NULL
 
@@ -95,7 +96,13 @@ class select_profile : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        val buttonStart6 = findViewById<Button>(R.id.button_start6)
+        buttonStart6.setOnClickListener{
+            val intent = Intent(this,fob_entry::class.java)
+            //intent.putExtra("prof5", profiler.profilerList[5])
+            //intent.putExtra("key", 6)
+            startActivity(intent)
+        }
 
 
 
