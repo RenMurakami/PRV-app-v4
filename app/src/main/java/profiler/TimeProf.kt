@@ -1,4 +1,4 @@
-package profilerClass
+package profiler
 
 import java.sql.Types.NULL
 

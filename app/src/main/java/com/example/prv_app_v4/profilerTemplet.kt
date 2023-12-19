@@ -10,10 +10,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import profilerClass.IgProf
-import profilerClass.LocationProf
-import profilerClass.Profiler
-import profilerClass.TimeProf
+import profiler.IgProf
+import profiler.LocationProf
+import profiler.Profiler
+import profiler.TimeProf
 
 
 class profilerTemplet : AppCompatActivity() {
@@ -92,7 +92,7 @@ class profilerTemplet : AppCompatActivity() {
         var typeClass = profilerType.javaClass
 
         var type=""
-        if(typeClass.toString() == "class profilerClass.LocationProf"){
+        if(typeClass.toString() == "class profiler.LocationProf"){
             Log.i(typeClass.toString(),"Location")
             type="location"
 
@@ -124,7 +124,7 @@ class profilerTemplet : AppCompatActivity() {
 
             }
 
-        }else if(typeClass.toString() == "class profilerClass.IgProf"){
+        }else if(typeClass.toString() == "class profiler.IgProf"){
             Log.i(typeClass.toString(),"IG")
             type="ig"
 
@@ -183,7 +183,7 @@ class profilerTemplet : AppCompatActivity() {
             }
 
 
-        }else if(typeClass.toString() == "class profilerClass.TimeProf"){
+        }else if(typeClass.toString() == "class profiler.TimeProf"){
             Log.i(typeClass.toString(),"Time")
             type="time"
 

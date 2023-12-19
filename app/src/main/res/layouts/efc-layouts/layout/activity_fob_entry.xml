@@ -1,21 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="efcClass.fob_entry"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    tools:context="efcTest.fob_entry">
 
-    <GridView
-        android:id="@+id/simpleGridView"
+
+
+    <!--grid layout is the easy way to do it. Do not work in the office. Do it at your house.-->
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="3"/>
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:columnCount="2"
+        android:rowCount="5"
+        >
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <Spinner
+            android:id="@+id/sp0"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <TextView
+            android:id="@+id/t1"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <Spinner
+            android:id="@+id/sp2"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <TextView
+            android:id="@+id/t3"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <Spinner
+            android:id="@+id/sp3"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <TextView
+            android:id="@+id/t4"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <Spinner
+            android:id="@+id/sp4"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <TextView
+            android:id="@+id/t5"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
+        <Spinner
+            android:id="@+id/sp5"
+            android:layout_columnWeight="1"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="sec1"
+            />
 
 
 
-</RelativeLayout>
+
+    </GridLayout>
+
+
+</ScrollView>

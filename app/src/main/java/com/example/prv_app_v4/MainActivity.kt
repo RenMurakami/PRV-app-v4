@@ -5,15 +5,9 @@ import android.os.Bundle
 import android.view.KeyEvent
 import android.widget.Button
 import android.widget.TextView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.prv_app_v4.databinding.ActivityMainBinding
-import profilerClass.*
-import java.io.Serializable
+import profiler.*
 
 class MainActivity : AppCompatActivity() {
 

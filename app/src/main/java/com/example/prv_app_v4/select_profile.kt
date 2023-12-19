@@ -5,11 +5,9 @@ import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import efcClass.fob_entry
-import profilerClass.ProfilerList
-import java.sql.Types.NULL
+import efcTest.fob_entry
+import profiler.ProfilerList
 
 
 class select_profile : AppCompatActivity() {
