@@ -18,14 +18,13 @@ class fob_entry : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fob_entry)
 
-        val spinnerId =findViewById<Spinner>(R.id.sp0)
-
         val colors = arrayOf("","OK","NG","N/A","Hold")
         val arrayAdp =
             ArrayAdapter(this@fob_entry,android.R.layout.simple_spinner_dropdown_item,colors)
-        spinnerId.adapter = arrayAdp
 
-        spinnerId?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+        val spinner0 =findViewById<Spinner>(R.id.sp0)
+        spinner0.adapter = arrayAdp
+        spinner0?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
 
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -45,6 +44,124 @@ class fob_entry : AppCompatActivity()  {
                 Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
             }
         }
+
+        val spinner1 =findViewById<Spinner>(R.id.sp1)
+        spinner1.adapter = arrayAdp
+        spinner1?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if("${colors[position]}"==""){
+                    Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(this@fob_entry,"item is ${colors[position]}",Toast.LENGTH_LONG).show()
+                }
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+            }
+        }
+
+        val spinner2 =findViewById<Spinner>(R.id.sp2)
+        spinner2.adapter = arrayAdp
+        spinner2?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if("${colors[position]}"==""){
+                    Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(this@fob_entry,"item is ${colors[position]}",Toast.LENGTH_LONG).show()
+                }
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+            }
+        }
+
+        val spinner3 =findViewById<Spinner>(R.id.sp3)
+        spinner3.adapter = arrayAdp
+        spinner3?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if("${colors[position]}"==""){
+                    Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(this@fob_entry,"item is ${colors[position]}",Toast.LENGTH_LONG).show()
+                }
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+            }
+        }
+
+        val spinner4 =findViewById<Spinner>(R.id.sp4)
+        spinner4.adapter = arrayAdp
+        spinner4?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if("${colors[position]}"==""){
+                    Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(this@fob_entry,"item is ${colors[position]}",Toast.LENGTH_LONG).show()
+                }
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+            }
+        }
+
+        val spinner5 =findViewById<Spinner>(R.id.sp5)
+        spinner5.adapter = arrayAdp
+        spinner5?.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if("${colors[position]}"==""){
+                    Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(this@fob_entry,"item is ${colors[position]}",Toast.LENGTH_LONG).show()
+                }
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
+            }
+        }
+
+
+
 
     }
 

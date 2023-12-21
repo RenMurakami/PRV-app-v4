@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="efcTest.header_information">
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10sp"
+        >
+        <LinearLayout
+            android:id="@+id/widget37"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:columnCount="4"
+                android:rowCount="4">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:textSize="18sp"
+                    android:text="Date: " />
+
+                <EditText
+                    android:id="@+id/date_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="date|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/proj"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:textSize="18sp"
+                    android:text="Project:" />
+
+                <EditText
+                    android:id="@+id/proj_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/lot"
+                    android:layout_columnWeight="1"
+                    android:layout_height="50sp"
+                    android:layout_margin="5sp"
+                    android:textSize="18sp"
+                    android:text="Lot:" />
+
+                <EditText
+                    android:id="@+id/lot_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/vehicle_num"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Vehicle #:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/vehicle_num_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_columnWeight="1"
+                    android:layout_height="50sp"
+                    android:layout_margin="5sp"
+                    android:textSize="18sp"
+                    android:text="Model \nType:"/>
+
+                <EditText
+                    android:id="@+id/model_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp"  />
+
+
+                <TextView
+                    android:id="@+id/vin"
+                    android:layout_columnWeight="1"
+                    android:layout_height="50sp"
+                    android:layout_margin="5sp"
+                    android:textSize="18sp"
+                    android:text="VIN:"/>
+
+                <EditText
+                    android:id="@+id/vin_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tester_name"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Tester \nName:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/tester_name_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tester_credentials"
+                    android:layout_columnWeight="1"
+                    android:layout_height="50sp"
+                    android:layout_margin="5sp"
+                    android:textSize="18sp"
+                    android:text="Tester \nCredentials:"
+                    />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dip"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
