@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
+
+
     tools:context="efcTest.header_information">
     <ScrollView
         android:id="@+id/myScrollView"
@@ -18,6 +20,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_margin="5sp"
+            android:background="@color/purple_200"
             >
 
             <GridLayout
@@ -25,6 +29,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10sp"
                 android:columnCount="4"
+                android:background="@color/white"
+
                 android:rowCount="4">
 
                 <TextView
@@ -174,22 +180,121 @@
 
             </GridLayout>
 
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:columnCount="3"
+                android:rowCount="4"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:id="@+id/test_Temperature"
+                    android:layout_height="150sp"
+                    android:layout_row="1"
+                    android:layout_rowSpan="3"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Test \nTemperature:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ambient"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Ambient"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ambient_in"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cold"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Cold"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cold_in"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hot"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Hot"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/hot_in"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/lineB"
+                    android:layout_height="5sp"
+                    android:layout_columnWeight="1"
+                    android:background="@color/purple_200"
+                    android:layout_columnSpan="3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/frameCode"
+                    android:layout_height="50sp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:text="Frame Code"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/frameCode_in"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="4"
+                    android:gravity="left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:textSize="18sp" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Start"
+                android:layout_margin="5sp"/>
+
 
 
 
 
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/click"
-        android:layout_width="142dp"
-        android:layout_height="50sp"
-        android:scaleX="1"
-        android:scaleY="1"
-        android:text="click"
-        android:textAlignment="center" />
-
 
 
 </LinearLayout>

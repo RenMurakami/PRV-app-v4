@@ -15,6 +15,7 @@
         android:layout_margin="10sp"
         android:columnCount="2"
         android:rowCount="5"
+        android:background="@color/purple_200"
         >
 
         <TextView
@@ -23,7 +24,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="Keyless Answer Back \nBuzzer or Horn "
+            android:background="@color/white"
             />
         <Spinner
             android:id="@+id/sp0"
@@ -31,7 +33,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:autofillHints="click"
+            android:background="@color/white"
             />
         <TextView
             android:id="@+id/t1"
@@ -39,7 +42,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="Door Lock / Unlock"
+            android:background="@color/white"
             />
         <Spinner
             android:id="@+id/sp1"
@@ -48,6 +52,7 @@
             android:layout_margin="5sp"
             android:textSize="18sp"
             android:text="sec1"
+            android:background="@color/white"
             />
         <TextView
             android:id="@+id/t2"
@@ -55,7 +60,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="Welcome Lights"
+            android:background="@color/white"
             />
         <Spinner
             android:id="@+id/sp2"
@@ -63,7 +69,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="Door Handle Pop Up "
+            android:background="@color/white"
             />
         <TextView
             android:id="@+id/t3"
@@ -71,7 +78,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="Power Slide Doors"
+            android:background="@color/white"
             />
         <Spinner
             android:id="@+id/sp3"
@@ -79,7 +87,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:background="@color/white"
             />
         <TextView
             android:id="@+id/t4"
@@ -87,7 +95,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="Power Slide Door \nRestriction mode (with fuel lid open)"
+            android:background="@color/white"
             />
         <Spinner
             android:id="@+id/sp4"
@@ -95,7 +104,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:background="@color/white"
             />
         <TextView
             android:id="@+id/t5"
@@ -103,7 +112,8 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="sec1"
+            android:text="ower Slide Door Anti-Pinch"
+            android:background="@color/white"
             />
         <Spinner
             android:id="@+id/sp5"
@@ -112,6 +122,17 @@
             android:layout_margin="5sp"
             android:textSize="18sp"
             android:text="sec1"
+            android:background="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/button_next_fob_entry"
+            android:layout_columnWeight="1"
+            android:layout_height="50sp"
+            android:layout_margin="10sp"
+            android:text="Next"
+            android:visibility="visible"/>
             />
 
 
