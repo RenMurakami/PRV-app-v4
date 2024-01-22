@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="300dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="20dp"
+    tools:context="efcTest.popUpReason">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/reasonLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason: "
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/reasonBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:gravity="right"
+            />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

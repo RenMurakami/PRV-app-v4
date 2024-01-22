@@ -1,18 +1,24 @@
 package efcTest
 
 import android.Manifest
+import android.app.Dialog
 import android.content.DialogInterface
 import android.content.pm.PackageManager
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.view.View
+import android.view.Window
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.GridView
+import android.widget.PopupWindow
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -176,7 +182,28 @@ class fob_entry : AppCompatActivity()  {
         }
     }
 
+    private fun createReasonEntry(){
+        //Open popup box to write the reason
+        val dialog = Dialog(this@fob_entry)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(false)
+        dialog.setContentView(R.layout.activity_pop_up_reason)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
+        val reasonBox:TextView=dialog.findViewById(R.id.reasonBox)
+        val reasonLabel:TextView=dialog.findViewById(R.id.reasonLabel)
+        val saveButton:TextView=dialog.findViewById(R.id.save)
+
+        dialog.show()
+
+        saveButton.setOnClickListener{
+            //Check the data is entered or not.
+
+            //Save the reason in excel
+            val reasonString = findViewById<EditText>(R.id.reasonBox).toString()
+        }
+
+    }
 
 
 
@@ -225,6 +252,24 @@ class fob_entry : AppCompatActivity()  {
                     Toast.makeText(this@fob_entry,"Nothing Selected",Toast.LENGTH_LONG).show()
                 }else{
                     Toast.makeText(this@fob_entry,"item is ${colors[position]}",Toast.LENGTH_LONG).show()
+                }
+
+
+
+                if( "${colors[position]}" != "OK" &&
+                    "${colors[position]}"  != ""  &&
+                    "${colors[position]}"  != "N/A" ){
+                    //Open popup box to write the reason
+                    val dialog = Dialog(this@fob_entry)
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+                    dialog.setCancelable(false)
+                    dialog.setContentView(R.layout.activity_pop_up_reason)
+                    dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+                    val reasonBox:TextView=dialog.findViewById(R.id.reasonBox)
+                    val reasonLabel:TextView=dialog.findViewById(R.id.reasonLabel)
+
+                    dialog.show()
                 }
 
             }
@@ -329,8 +374,12 @@ class fob_entry : AppCompatActivity()  {
         val buttonNext =findViewById<Button>(R.id.button_next_fob_entry)
         buttonNext.setOnClickListener{
             createExcel()
-
         }
+
+
+        // spinner 0
+
+
 
 
     }

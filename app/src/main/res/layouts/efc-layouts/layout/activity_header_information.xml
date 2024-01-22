@@ -286,11 +286,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="Start"
-                android:layout_margin="5sp"/>
-
-
-
+                android:layout_margin="5sp"
+                android:text="Start" />
 
 
         </LinearLayout>
