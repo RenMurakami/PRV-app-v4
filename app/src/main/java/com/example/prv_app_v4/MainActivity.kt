@@ -128,7 +128,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonStart = findViewById<Button>(R.id.button_start)
         buttonStart.setOnClickListener{
-            val intent = Intent(this,select_profile::class.java)
+            val intent = Intent(this,Select_profile::class.java)
             intent.putExtra("object", profiler)
             startActivity(intent)
         }

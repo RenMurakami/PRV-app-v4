@@ -6,12 +6,11 @@ import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import efcTest.fob_entry
-import efcTest.header_information
+import efcTest.Header_information
 import profiler.ProfilerList
 
 
-class select_profile : AppCompatActivity() {
+class Select_profile : AppCompatActivity() {
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         return if (keyCode == KeyEvent.KEYCODE_BACK) {
             //preventing default implementation previous to android.os.Build.VERSION_CODES.ECLAIR
@@ -49,7 +48,7 @@ class select_profile : AppCompatActivity() {
         //Columbus profiler
         val buttonStart0 = findViewById<Button>(R.id.button_start0)
         buttonStart0.setOnClickListener{
-            val intent = Intent(this,profilerTemplet::class.java)
+            val intent = Intent(this,ProfilerTemplet::class.java)
             intent.putExtra("prof0", profiler.profilerList[0])
             intent.putExtra("key", 0)
             startActivity(intent)
@@ -57,7 +56,7 @@ class select_profile : AppCompatActivity() {
 
         val buttonStart1 = findViewById<Button>(R.id.button_start1)
         buttonStart1.setOnClickListener{
-            val intent = Intent(this,profilerTemplet::class.java)
+            val intent = Intent(this,ProfilerTemplet::class.java)
             intent.putExtra("prof1", profiler.profilerList[1])
             intent.putExtra("key", 1)
             startActivity(intent)
@@ -65,7 +64,7 @@ class select_profile : AppCompatActivity() {
 
         val buttonStart2 = findViewById<Button>(R.id.button_start2)
         buttonStart2.setOnClickListener{
-            val intent = Intent(this,profilerTemplet::class.java)
+            val intent = Intent(this,ProfilerTemplet::class.java)
             intent.putExtra("prof2", profiler.profilerList[2])
             intent.putExtra("key", 2)
             startActivity(intent)
@@ -73,7 +72,7 @@ class select_profile : AppCompatActivity() {
 
         val buttonStart3 = findViewById<Button>(R.id.button_start3)
         buttonStart3.setOnClickListener{
-            val intent = Intent(this,profilerTemplet::class.java)
+            val intent = Intent(this,ProfilerTemplet::class.java)
             intent.putExtra("prof3", profiler.profilerList[3])
             intent.putExtra("key", 3)
             startActivity(intent)
@@ -81,7 +80,7 @@ class select_profile : AppCompatActivity() {
 
         val buttonStart4 = findViewById<Button>(R.id.button_start4)
         buttonStart4.setOnClickListener{
-            val intent = Intent(this,profilerTemplet::class.java)
+            val intent = Intent(this,ProfilerTemplet::class.java)
             intent.putExtra("prof4", profiler.profilerList[4])
             intent.putExtra("key", 4)
             startActivity(intent)
@@ -89,7 +88,7 @@ class select_profile : AppCompatActivity() {
 
         val buttonStart5 = findViewById<Button>(R.id.button_start5)
         buttonStart5.setOnClickListener{
-            val intent = Intent(this,profilerTemplet::class.java)
+            val intent = Intent(this,ProfilerTemplet::class.java)
             intent.putExtra("prof5", profiler.profilerList[5])
             intent.putExtra("key", 5)
             startActivity(intent)
@@ -97,7 +96,7 @@ class select_profile : AppCompatActivity() {
 
         val buttonStart6 = findViewById<Button>(R.id.button_start6)
         buttonStart6.setOnClickListener{
-            val intent = Intent(this,header_information::class.java)
+            val intent = Intent(this,Header_information::class.java)
             //intent.putExtra("prof5", profiler.profilerList[5])
             //intent.putExtra("key", 6)
             startActivity(intent)

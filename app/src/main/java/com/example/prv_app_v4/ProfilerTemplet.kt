@@ -16,7 +16,7 @@ import profiler.Profiler
 import profiler.TimeProf
 
 
-class profilerTemplet : AppCompatActivity() {
+class ProfilerTemplet : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
@@ -60,7 +60,7 @@ class profilerTemplet : AppCompatActivity() {
                 buttonStart.setVisibility(View.INVISIBLE)
 
                 buttonEnd.setOnClickListener{
-                    val intent = Intent(this,end::class.java)
+                    val intent = Intent(this,EndOfPrv::class.java)
                     startActivity(intent)
                 }
                 return true
@@ -116,7 +116,7 @@ class profilerTemplet : AppCompatActivity() {
                 profilers.currentNum = profilers.currentNum+1
                 if(!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
-                    val intent = Intent(this,profilerTemplet::class.java)
+                    val intent = Intent(this,ProfilerTemplet::class.java)
                     intent.putExtra(selectProf, profilers)
                     intent.putExtra("key", keyB)
                     startActivity(intent)
@@ -174,7 +174,7 @@ class profilerTemplet : AppCompatActivity() {
                 profilers.currentNum = profilers.currentNum+1
                 if (!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
-                    val intent = Intent(this,profilerTemplet::class.java)
+                    val intent = Intent(this,ProfilerTemplet::class.java)
                     intent.putExtra(selectProf, profilers)
                     intent.putExtra("key", keyB)
                     startActivity(intent)
@@ -233,7 +233,7 @@ class profilerTemplet : AppCompatActivity() {
                 profilers.currentNum = profilers.currentNum+1
                 if(!endCondition()){
                     var nextProfiler = profilers.taskList[profilers.currentNum]
-                    val intent = Intent(this,profilerTemplet::class.java)
+                    val intent = Intent(this,ProfilerTemplet::class.java)
                     intent.putExtra(selectProf, profilers)
                     intent.putExtra("key", keyB)
                     startActivity(intent)

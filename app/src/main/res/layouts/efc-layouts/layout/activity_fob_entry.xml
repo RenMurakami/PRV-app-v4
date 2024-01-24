@@ -3,19 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="efcTest.fob_entry">
+    android:layout_height="wrap_content"
+
+    tools:context="efcTest.Fob_entry">
 
 
 
     <!--grid layout is the easy way to do it. Do not work in the office. Do it at your house.-->
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10sp"
+        android:layout_height="wrap_content"
+
         android:columnCount="2"
         android:rowCount="5"
         android:background="@color/purple_200"
+
+        android:orientation="horizontal"
         >
 
         <TextView
@@ -24,7 +27,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="Keyless Answer Back \nBuzzer or Horn "
+            android:text="FOB ENTRY:\nKeyless Answer Back \nBuzzer or Horn "
             android:background="@color/white"
             />
         <Spinner
@@ -42,7 +45,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="Door Lock / Unlock"
+            android:text="FOB ENTRY:\nDoor Lock / Unlock"
             android:background="@color/white"
             />
         <Spinner
@@ -60,7 +63,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="Welcome Lights"
+            android:text="FOB ENTRY:\nWelcome Lights"
             android:background="@color/white"
             />
         <Spinner
@@ -69,7 +72,6 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="Door Handle Pop Up "
             android:background="@color/white"
             />
         <TextView
@@ -78,7 +80,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="Power Slide Doors"
+            android:text="FOB ENTRY:\nPower Slide Doors"
             android:background="@color/white"
             />
         <Spinner
@@ -95,7 +97,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="Power Slide Door \nRestriction mode (with fuel lid open)"
+            android:text="FOB ENTRY:\nPower Slide Door \nRestriction mode (with fuel lid open)"
             android:background="@color/white"
             />
         <Spinner
@@ -112,7 +114,7 @@
             android:layout_height="100sp"
             android:layout_margin="5sp"
             android:textSize="18sp"
-            android:text="ower Slide Door Anti-Pinch"
+            android:text="FOB ENTRY:\nPower Slide Door Anti-Pinch"
             android:background="@color/white"
             />
         <Spinner
@@ -125,20 +127,24 @@
             android:background="@color/white"
             />
 
-
         <Button
             android:id="@+id/button_next_fob_entry"
             android:layout_columnWeight="1"
             android:layout_height="50sp"
-            android:layout_margin="10sp"
+            android:layout_margin="5sp"
+
+            android:layout_width="50sp"
+            android:textSize="18sp"
             android:text="Next"
             android:visibility="visible"/>
-            />
+
 
 
 
 
     </GridLayout>
+
+
 
 
 </ScrollView>

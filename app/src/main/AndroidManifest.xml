@@ -22,28 +22,31 @@
         android:theme="@style/Theme.PRVappv4"
         tools:targetApi="31">
         <activity
+            android:name="efcTest.EndOfEfc"
+            android:exported="false" />
+        <activity
             android:name="efcTest.popUpReason"
             android:exported="false" />
         <activity
-            android:name="efcTest.header_information"
+            android:name="efcTest.Header_information"
             android:exported="false" />
         <activity
-            android:name="efcTest.fob_entry"
+            android:name="efcTest.Fob_entry"
             android:exported="false" />
         <activity
             android:name=".Setting"
             android:exported="false" />
         <activity
-            android:name=".profilerTemplet"
+            android:name=".ProfilerTemplet"
             android:exported="false" />
         <activity
-            android:name=".end"
+            android:name=".EndOfPrv"
             android:exported="false" />
         <activity
             android:name=".Test_Profile"
             android:exported="false" />
         <activity
-            android:name=".select_profile"
+            android:name=".Select_profile"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
